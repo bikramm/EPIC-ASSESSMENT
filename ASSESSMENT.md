@@ -67,6 +67,7 @@ Using the code supplied, solve the two problems below.
 
 #### Problem 1:
 The Store view page is displaying an error. Fix it.
+- Fixed in www folder. <?= GridView::widget([...
 
 #### Problem 2:
 Update the site to support the new *discount* column rate.
