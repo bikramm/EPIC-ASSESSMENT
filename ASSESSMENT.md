@@ -52,14 +52,14 @@ Identify the fruits that have sold less than 20 units.
 #### Question 7:
 Add a new decimal column to the sales table called *discount* that does not allow NULL values and set the default value to 0.00.
 ```sql
-ALTER TABLE `sales` ADD `discount` DECIMAL NOT NULL DEFAULT '0.00' ;
+ALTER TABLE `sales` ADD `discount` DECIMAL(10,2) NOT NULL DEFAULT '0.00' ;
 
 ```
 
 #### Question 8:
 Update the values for the *discount* field with random values between 0 and 1.
 ```sql
-ALTER TABLE `sales` CHANGE `discount` `discount` DECIMAL(1,0) NOT NULL DEFAULT'0';
+UPDATE sales SET discount = FLOOR( 0 + RAND( ) *1 );
 ```
 
 ## PHP
